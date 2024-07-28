@@ -17,6 +17,7 @@
 		B41D34892C562AFE00208A9D /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D34882C562AFE00208A9D /* TaskDetailView.swift */; };
 		B4D544B22C562ED60099E4E2 /* TodoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D544B12C562ED60099E4E2 /* TodoAppUITests.swift */; };
 		B4D544B42C562ED60099E4E2 /* TodoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D544B32C562ED60099E4E2 /* TodoAppUITestsLaunchTests.swift */; };
+		B4D544BC2C5631EB0099E4E2 /* Springboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D544BB2C5631EB0099E4E2 /* Springboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		B4D544AF2C562ED60099E4E2 /* TodoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D544B12C562ED60099E4E2 /* TodoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppUITests.swift; sourceTree = "<group>"; };
 		B4D544B32C562ED60099E4E2 /* TodoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B4D544BB2C5631EB0099E4E2 /* Springboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Springboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,10 +124,19 @@
 		B4D544B02C562ED60099E4E2 /* TodoAppUITests */ = {
 			isa = PBXGroup;
 			children = (
+				B4D544BA2C5631D00099E4E2 /* Utils */,
 				B4D544B12C562ED60099E4E2 /* TodoAppUITests.swift */,
 				B4D544B32C562ED60099E4E2 /* TodoAppUITestsLaunchTests.swift */,
 			);
 			path = TodoAppUITests;
+			sourceTree = "<group>";
+		};
+		B4D544BA2C5631D00099E4E2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B4D544BB2C5631EB0099E4E2 /* Springboard.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +254,7 @@
 			files = (
 				B4D544B42C562ED60099E4E2 /* TodoAppUITestsLaunchTests.swift in Sources */,
 				B4D544B22C562ED60099E4E2 /* TodoAppUITests.swift in Sources */,
+				B4D544BC2C5631EB0099E4E2 /* Springboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
