@@ -42,6 +42,30 @@ final class when_user_saves_a_new_task: XCTestCase {
         XCTAssertEqual(1, taskList.cells.count)
     }
     
+    func test_display_the_error_message_for_duplicate_title_task() {
+        let app = XCUIApplication()
+        continueAfterFailure = false
+        app.launch()
+        
+        let titleTextField = app.textFields["titleTextField"]
+        titleTextField.tap()
+        titleTextField.typeText("Mow the lawn")
+        
+        let saveTaskButton = app.buttons["saveTaskButton"]
+        saveTaskButton.tap()
+        
+        titleTextField.tap()
+        titleTextField.typeText("Mow the lawn")
+        
+        saveTaskButton.tap()
+        
+        let taskList = app.tables["taskList"]
+        XCTAssertEqual(1, taskList.cells.count)
+        
+        let messageText = app.staticTexts["messageText"]
+        XCTAssertEqual(messageText.label, "Task is already added")
+    }
+    
     override func tearDown() {
         Springboard.deleteApp()
     }
